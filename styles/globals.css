@@ -17,8 +17,10 @@ a {
 :root {
   --font-family: 'Open Sans', sans-serif;
   --dark-color: #3B434E;
-  --lignt-color: white;
+  --light-color: white;
   --primary-color: #7653FC;
+  --primary-hover: #1F032F;
   --green-color: #1DC37E;
   --light-green: #C8F8E4;
+  --light-gray: #EBEBEB;
 }
