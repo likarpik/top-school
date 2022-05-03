@@ -4,7 +4,7 @@ import cn from "classnames";
 import styles from "./Button.module.css";
 
 
-export const Button = ({appearance, children, arrow = 'none', ...props}: ButtonProps): JSX.Element => {
+export const Button = ({appearance, children, arrow = 'none', className, ...props}: ButtonProps): JSX.Element => {
     return(
         <button 
             className={cn(styles.button, {
@@ -13,7 +13,7 @@ export const Button = ({appearance, children, arrow = 'none', ...props}: ButtonP
             })}
             {...props}>
             {children}
-            {arrow != 'none' && <span className={cn(styles.arrow, {
+            {arrow != 'none' && <span className={cn(styles.arrow, className, {
                 [styles.down]: arrow == 'down'
             })}>
                 <ArrowIcon />
